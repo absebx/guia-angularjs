@@ -11,7 +11,8 @@
     <h1>{{name}}</h1>
     <ul>
       <li ng-repeat="actividad in todo">
-        {{actividad.descripcion}}-{{actividad.fecha | date:'short'}}
+        {{actividad.descripcion}}-{{actividad.fecha | date:'short'}}-
+        <a href="#" ng-click="removeActv(actividad)" style="color:red">x</a>
       </li>
     </ul>
     <form ng-submit="addActv()">
