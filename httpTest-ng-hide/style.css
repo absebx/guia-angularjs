@@ -1,0 +1,13 @@
+.animated{
+  opacity: 1;
+  max-height: auto;
+  overflow: hidden;
+  -webkit-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+}
+.animated.ng-hide{
+  opacity: 0;
+  max-height: 0px !important;
+  overflow: hidden;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="ajaxApp">
+  <head>
+    <meta charset="utf-8">
+    <title>HttpAjax</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script src="controller.js"></script>
+  </head>
+  <body ng-controller="ajaxController">
+    {{"Hola con angular a "+nombre}} <br>
+    <input type="text" ng-model="newPost.title" placeholder="titulo"> <br>
+    <textarea ng-model="newPost.body" placeholder="Post"></textArea>
+    <button ng-click="addPost()">Enviar</button>
+    <ul>
+      <li ng-repeat="post in posts">
+        <h2>{{post.title}}</h2>
+        <p>{{post.body}}</p>
+      </li>
+    </ul>
+  </body>
+</html>

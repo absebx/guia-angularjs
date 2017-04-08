@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+  <head>
+    <meta charset="utf-8">
+    <title>RootScope</title>
+    <script type="text/javascript" src="../angular.min.js"></script>
+    <script src="controler.js"></script>
+  </head>
+  <body ng-controller="mainController">
+    <button ng-click="click()">llal</button>
+    Controlador:{{name}} <br>
+    Padre: {{$parent.name}} <br>
+    <div ng-controller="childController">Hijo: {{name}} <br>
+      <input type="text" ng-model="$parent.name">
+    </div>
+  </body>
+</html>
